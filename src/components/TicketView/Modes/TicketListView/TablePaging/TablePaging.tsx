@@ -25,11 +25,9 @@ const TablePaging: FC<TablePagingProps> = ({ pageSize, currentPage, pagesCount, 
   return (
     <div className={styles.tablePaging}>
       <div>
-        {!isAtLowBorder && (
-          <Button onClick={() => setPaging?.(currentPage - 1)}>
-            <ArrowBackIosNewOutlinedIcon sx={{ fontSize: 18 }} />
-          </Button>
-        )}
+        <Button className={isAtLowBorder ? styles.hidden : ''} onClick={() => setPaging?.(currentPage - 1)}>
+          <ArrowBackIosNewOutlinedIcon sx={{ fontSize: 18 }} />
+        </Button>
         <ul className={styles.numberList}>
           {Array(pagesCount)
             .fill(0)
@@ -41,11 +39,9 @@ const TablePaging: FC<TablePagingProps> = ({ pageSize, currentPage, pagesCount, 
               </li>
             ))}
         </ul>
-        {!isAtHighBorder && (
-          <Button onClick={() => setPaging?.(currentPage + 1)}>
-            <ArrowForwardIosOutlinedIcon sx={{ fontSize: 18 }} />
-          </Button>
-        )}
+        <Button className={isAtHighBorder ? styles.hidden : ''} onClick={() => setPaging?.(currentPage + 1)}>
+          <ArrowForwardIosOutlinedIcon sx={{ fontSize: 18 }} />
+        </Button>
       </div>
     </div>
   );
