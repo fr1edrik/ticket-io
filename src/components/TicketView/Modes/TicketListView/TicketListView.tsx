@@ -56,7 +56,7 @@ const TicketListView: FC<TicketListViewProps> = ({ tickets, className }) => {
                     <div data-testid={`ticket_view_list_address_${index}`} className={styles.verticalCenter}>
                       <PlaceOutlinedIcon fontSize="small" />
                       <span>{address.streetAddress}</span>
-                      <span>, </span>
+                      <span>,&nbsp;</span>
                       <span>{address.addressLocality}</span>
                     </div>
                   </span>
