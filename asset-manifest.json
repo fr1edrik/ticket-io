@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ticket-io/static/css/main.3ef4c11b.css",
-    "main.js": "/ticket-io/static/js/main.eda4a6e3.js",
+    "main.js": "/ticket-io/static/js/main.d388b8f8.js",
     "index.html": "/ticket-io/index.html",
     "main.3ef4c11b.css.map": "/ticket-io/static/css/main.3ef4c11b.css.map",
-    "main.eda4a6e3.js.map": "/ticket-io/static/js/main.eda4a6e3.js.map"
+    "main.d388b8f8.js.map": "/ticket-io/static/js/main.d388b8f8.js.map"
   },
   "entrypoints": [
     "static/css/main.3ef4c11b.css",
-    "static/js/main.eda4a6e3.js"
+    "static/js/main.d388b8f8.js"
   ]
 }
