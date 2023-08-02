@@ -48,7 +48,7 @@ const TicketListView: FC<TicketListViewProps> = ({ tickets, className }) => {
           <TableBody>
             {data.map(({ title, address, startDate, priceFrom, shopUrl }, index) => (
               <StyledTableRow key={index}>
-                <TableCell>
+                <TableCell sx={{ width: '50%' }}>
                   <span>
                     <div data-testid={`ticket_view_list_title_${index}`} style={{ padding: 4 }}>
                       <Title isSubtitle>{title}</Title>
